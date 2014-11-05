@@ -1,4 +1,4 @@
-buffalo-portfolio
+Buffalo Photo Portfolio
 =================
 
-A portfolio plugin for a theme
+A photography portfolio plugin for a theme.
