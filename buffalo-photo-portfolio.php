@@ -26,19 +26,19 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 //The file that will run once the plugin is activated
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-activator.php';
+require_once plugin_dir_path( __FILE__ ) . '/trunk/includes/bpp-activate.php';
 
-// The code the will run once the plugin is deactivated
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
+// // The code the will run once the plugin is deactivated
+// require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name-deactivator.php';
 
-// A hook that will be called once the plugin is activated
-register_activation_hook( __FILE__, array( 'Plugin_Name_Activator', 'activate' ) );
+// // A hook that will be called once the plugin is activated
+// register_activation_hook( __FILE__, array('Buffalo_Photo_Activate', 'activate'));
 
-// A hook that will be called once the plugin is deactivatd
-register_deactivation_hook( __FILE__, array( 'Plugin_Name_Deactivator', 'deactivate' ) );
+// // A hook that will be called once the plugin is deactivatd
+// register_deactivation_hook( __FILE__, array( 'Plugin_Name_Deactivator', 'deactivate' ) );
 
  // The core file which includes internalization
-require_once plugin_dir_path( __FILE__ ) . 'includes/class-plugin-name.php';
+require_once plugin_dir_path( __FILE__ ) . 'trunk/includes/core.php';
 
 /**
  *
@@ -55,5 +55,3 @@ function run_buffalo_portfolio() {
 	}
 
 	run_buffalo_portfolio();
-
-}
