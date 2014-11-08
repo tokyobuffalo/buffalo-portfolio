@@ -30,8 +30,11 @@ class BPP_Activator {
 	 * @since    0.0.1
 	 */
 	public static function activate() {
-
-		update_option( 'bpp-options', 'bpp-activated' );
+		$addOptions = array(
+			'bpp-activated' => 0,
+			'bpp-social-buttons' => 1,
+		);
+		update_option( 'bpp-options', $addOptions );
 
 	}
 

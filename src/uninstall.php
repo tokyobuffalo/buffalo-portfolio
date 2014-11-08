@@ -29,3 +29,6 @@
 if ( ! defined( 'WP_UNINSTALL_PLUGIN' ) ) {
 	exit;
 }
+
+// If uninstalling, remove the database
+delete_option( 'bpp-options' );
