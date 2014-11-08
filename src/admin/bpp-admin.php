@@ -61,8 +61,8 @@ class Plugin_Name_Admin {
 	 */
 	
 	public function add_admin_menu() {
-
-   add_menu_page( __('Buffalo Photo'), __('Buffalo Photo'), 'activate_plugins', __('Buffalo Photo'), 'admin_options_html', plugins_url( 'buffalo-portfolio/assets/bpp-icon.png' ), 99 );
+	 include('buffalo-options.php');
+   add_menu_page( __( 'Buffalo Photo' ), __( 'Buffalo Photo' ), 'activate_plugins', 'buffalo-options.php', 'bpp_admin_html', plugins_url( 'buffalo-portfolio/assets/bpp-icon.png' ), 99 );
   }
 
 	/**
