@@ -31,6 +31,8 @@ class BPP_Activator {
 	 */
 	public static function activate() {
 
+		update_option( 'bpp-options', 'bpp-activated' );
+
 	}
 
 }
