@@ -51,6 +51,14 @@ register_deactivation_hook( __FILE__, array( 'BPP_Deactivator', 'deactivate' ) )
 require plugin_dir_path( __FILE__ ) . 'src/includes/bpp.php';
 
 /**
+ * Define the constants that the plugin will use
+ */
+
+define('BPP_PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
+define('BPP_PLUGIN_ASSETS', plugin_dir_path( __FILE__ ) . 'assets' );
+define('BPP_PLUGIN_ICON', plugin_dir_url( __FILE__ ) . 'assets/bpp-icon.png' );
+
+/**
  * Begins execution of the plugin.
  *
  * Since everything within the plugin is registered via hooks,

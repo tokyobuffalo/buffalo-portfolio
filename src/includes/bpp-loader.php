@@ -66,11 +66,7 @@ class BPP_Loader {
   public function add_action( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
     $this->actions = $this->add( $this->actions, $hook, $component, $callback, $priority, $accepted_args );
   }
-
-  public function add_admin_menu() {
-   add_menu_page( __('Buffalo Photo'), __('Buffalo Photo'), 'activate_plugins', __('Buffalo Photo'), '', '', 99 );
-  }
-
+  
   /**
    * Add a new filter to the collection to be registered with WordPress.
    *
@@ -82,7 +78,7 @@ class BPP_Loader {
    * @var      int      Optional    $accepted_args    The number of arguments that should be passed to the $callback.
    */
   public function add_filter( $hook, $component, $callback, $priority = 10, $accepted_args = 1 ) {
-    // $this->filters = $this->add( $this->filters, $hook, $component, $callback, $priority, $accepted_args );
+    $this->filters = $this->add( $this->filters, $hook, $component, $callback, $priority, $accepted_args );
   }
   /**
    * A utility function that is used to register the actions and hooks into a single
