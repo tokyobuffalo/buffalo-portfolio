@@ -2,3 +2,47 @@
  * All of the CSS for your dashboard-specific functionality should be
  * included in this file.
  */
+
+
+	th.table-center,
+	.table-center {
+		text-align: center;
+	}
+
+	input[type="checkbox"] {
+		width: 40px;
+		height: 25px;
+		border-radius: 10px;
+		position: relative;
+	}
+
+	input[type="checkbox"]::before {
+		content: "";
+		width: 70%;
+		height: 100%;
+		border: 1px solid #c4c4c4;
+		background: #fff;
+		border-radius: 10px;
+		position: absolute;
+		top: -1px;
+		left: -5px;
+		z-index: 20;
+	} 
+
+	input[type="checkbox"]:checked {
+		background: #4CE071;
+	}
+
+	input[type="checkbox"]:checked::before {
+		content: "";
+		width: 70%;
+		height: 100%;
+		position: absolute;
+		top: 1px;
+		left: 20px;
+		right: 0;
+	} 
+
+	input[type="checkbox"]:checked {
+		transition: 250ms linear;
+	}

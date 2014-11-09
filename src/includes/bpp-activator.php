@@ -35,7 +35,6 @@ class BPP_Activator {
 			'bpp-social-buttons' => 1,
 		);
 		update_option( 'bpp-options', $addOptions );
-
 	}
 
 }
