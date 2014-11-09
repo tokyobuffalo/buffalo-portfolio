@@ -3,20 +3,19 @@
  * included in this file.
  */
 
-
 	th.table-center,
 	.table-center {
 		text-align: center;
 	}
 
-	input[type="checkbox"] {
+	.bpp-input > input[type="checkbox"] {
 		width: 35px;
 		height: 25px;
 		border-radius: 10px;
 		position: relative;
 	}
 
-	input[type="checkbox"]::before {
+	.bpp-input > input[type="checkbox"]::before {
 		content: "";
 		width: 67%;
 		height: 100%;
@@ -30,11 +29,11 @@
 		box-shadow: 0 3px 2px -2px gray;
 	} 
 
-	input[type="checkbox"]:checked {
+	.bpp-input > input[type="checkbox"]:checked {
 		background: #4CE071;
 	}
 
-	input[type="checkbox"]:checked::before {
+	.bpp-input > input[type="checkbox"]:checked::before {
 		content: "";
 		width: 67%;
 		height: 100%;
@@ -45,6 +44,10 @@
 		border: 1px solid #4CE071;
 	} 
 
-	input[type="checkbox"]:checked {
+	.bpp-input > input[type="checkbox"]:checked {
 		transition: 250ms linear;
+	}
+
+	tr > .vertical-middle {
+		vertical-align: middle;
 	}
