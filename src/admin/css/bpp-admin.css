@@ -8,6 +8,10 @@
 		text-align: center;
 	}
 
+	.float-right {
+		float: right;
+	}
+
 	.bpp-input > input[type="checkbox"] {
 		width: 35px;
 		height: 25px;

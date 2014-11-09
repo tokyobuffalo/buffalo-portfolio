@@ -3,7 +3,7 @@ function bpp_admin_html() { ?>
 <div class="wrap">
 	<h2>Buffalo Photo Portfolio Options</h2>
 	<h3>Social Media</h3>
-	<form method="post" action="buffalo-options.php" novalidate="novalidate">
+	<form method="post" action="?page=buffalo-options.php" novalidate="novalidate">
 	<table class="wp-list-table widefat fixed">
 		<thead>
 			<tr>
@@ -12,6 +12,12 @@ function bpp_admin_html() { ?>
 				<th class="bpp-options-th table-center">Count</th>
 			</tr>
 		</thead>
+		<tfoot>
+				<tr>
+					<th scope="row">Submit</th>
+					<th scope="col"  colspan="2"><span class="float-right"><?php submit_button('', 'primary', 'submit', false, ''); ?></span></th>
+				</tr>
+			</tfoot>
 		<tbody>
 			<tr>
 				<th scope="row" class="bold"><label for="bpp-display-all">Images</label>
@@ -34,6 +40,10 @@ function bpp_admin_html() { ?>
 				<th>LinkedIn</th>
 				<td class="table-center bpp-input"><input type="checkbox"></td>
 				<td class="table-center bpp-input"><input type="checkbox"></td>
+			</tr>
+			<tr>
+				<th scope="row" class="bold"><label for="bpp-display-all">Sort</label>
+				</th>
 			</tr>
 		</tbody>
 	</table>
